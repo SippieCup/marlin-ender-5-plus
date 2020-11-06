@@ -410,7 +410,7 @@
 //#define TM3DAERO
 //#define TM3DAERO_EXTENDED
 //#define PETSFANG  //This is the RIGHT mounted version - if using the left mount please use the CUSTOM_PROBE option.
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // If you are using the Creality "Silent" Board with the TMC drivers uncomment the below line
 //#define TMC_CREALITY_BOARD
@@ -864,8 +864,8 @@
   *      O-- FRONT --+
   *    (0,0)
   */
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER -60  // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER -13  // Y offset: -front +behind [the nozzle]
 #endif
 
 //===========================================================================
@@ -883,7 +883,7 @@
 // When installing a Tough Extruder or E3D Titan or Bondtech that is Geared you likely need to enable the REVERSE_E_MOTOR_DIRECTION option
 #define CUSTOM_ESTEPS
 //#define REVERSE_E_MOTOR_DIRECTION
-#define CUSTOM_ESTEPS_VALUE 96.09
+#define CUSTOM_ESTEPS_VALUE 95.17
 
 // DUAL HOTEND SETTINGS ----------------------------
 
